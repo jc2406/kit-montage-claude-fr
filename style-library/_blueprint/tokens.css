@@ -1,0 +1,32 @@
+/* Tokens du style — la source unique de la palette / typo / mouvement de CE style.
+   Chaque carte de ce style utilise ces variables ; les cartes ne codent jamais en dur
+   couleurs, noms de police ni courbes. Modifiez une valeur ici et toutes les cartes suivent. */
+
+:root {
+  /* palette (reflet de style.json + DESIGN.md) */
+  --bg: #000000;
+  --fg: #ffffff;
+  --accent: #000000;
+  --muted: rgba(255, 255, 255, 0.62);
+
+  /* typographie */
+  --font-display: "FontName", system-ui, sans-serif;
+  --font-body: "FontName", system-ui, sans-serif;
+  --font-mono: "FontName", ui-monospace, monospace;
+
+  --size-display: 96px;
+  --size-headline: 48px;
+  --size-body: 28px;
+  --size-label: 20px;
+
+  /* mouvement — les courbes comme signature du style (utilisées en GSAP et en CSS) */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-in: 0.45s;
+  --dur-out: 0.35s;
+
+  /* espacement / forme */
+  --radius: 16px;
+  --pad: 48px;
+}

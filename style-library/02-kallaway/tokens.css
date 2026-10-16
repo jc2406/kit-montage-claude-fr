@@ -1,0 +1,135 @@
+/* ============================================================================
+   KALLAWAY — tokens du style
+   Source unique de la palette / typo / mouvement / texture de toutes les cartes de
+   ce style. Les cartes utilisent ces variables et ne codent jamais en dur couleurs, polices, courbes,
+   lueurs ni textures. Modifiez ici, toutes les cartes suivent.
+   Voir DESIGN.md pour le pourquoi.
+   Esthétique : motion design sombre haut de gamme — fond froid presque noir, une
+   lueur bleue d'« aurore » qui monte du bas, cartes en glassmorphism, éléments
+   néon éclairés par la tranche, texte lumineux en dégradé, flou de mise au point,
+   courbes douces façon After Effects. Le bleu est la lueur vedette. L'opposé de Vox
+   sur tous les axes : doux et pas saccadé, sombre et pas papier, lueur et pas encre.
+   ============================================================================ */
+
+/* Typo. Le compilateur HyperFrames intègre les polices prises en charge par leur nom au rendu ;
+   cet @import permet à l'aperçu autonome / navigateur d'afficher les bonnes polices. */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  /* --- palette (reflet de style.json + DESIGN.md). Sombre. ----------------- */
+  --canvas:       #0A0E14;   /* fond principal froid presque noir */
+  --canvas-deep:  #07121C;   /* marine plus profond — vignette / puits de profondeur */
+  --ink:          #2A251F;   /* texte sombre pour les rares surfaces claires/crème */
+  --paper:        #F0EEE9;   /* surface blanc chaud (verre clair / pastilles) */
+  --white:        #FFFFFF;
+
+  --text:         #F0EEE9;   /* texte principal sur fond sombre */
+  --text-dim:     rgba(240, 238, 233, 0.62);  /* texte secondaire */
+  --text-faint:   rgba(240, 238, 233, 0.34);  /* métadonnées, petits caractères */
+
+  --accent:       #37BDF8;   /* bleu signature — LA lueur vedette (là où les références avaient du violet). Changez-le pour votre marque. */
+  --accent-2:     #F5D82A;   /* jaune — touche secondaire / chiffres mis en avant */
+  --alert:        #FF3B30;   /* rouge — alerte, écart négatif, « mensonge » */
+  --warm:         #FF8A5C;   /* orange — accent secondaire chaud */
+
+  /* triplets rgb pour construire des lueurs rgba() dans les cartes sans retaper l'hexa */
+  --accent-rgb:   55, 189, 248;
+  --accent2-rgb:  245, 216, 42;
+  --alert-rgb:    255, 59, 48;
+  --warm-rgb:     255, 138, 92;
+
+  /* alias sémantiques attendus par le contrat du blueprint */
+  --bg:     var(--canvas);
+  --fg:     var(--text);
+  --muted:  var(--text-dim);
+
+  /* --- typographie ---------------------------------------------------------- */
+  /* Plus Jakarta Sans = la voix (titres, grands chiffres, texte lumineux) : géométrique,
+     haut de gamme, arrondie comme les angles du verre, lourde en 800. Inter = corps / libellés /
+     légendes, s'efface. Space Mono = pastilles de données, horodatages, % — la voix
+     « interface ». Aucun empattement nulle part (ça, c'est Vox). */
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono:    "Space Mono", ui-monospace, "SF Mono", monospace;
+  /* alias du contrat */
+  --font-label:   var(--font-body);
+  --font-hand:    var(--font-body);
+
+  --wt-reg:    400;
+  --wt-med:    500;
+  --wt-semi:   600;
+  --wt-bold:   700;
+  --wt-black:  800;
+
+  /* tailles vidéo pour 1920x1080 (grandes — lisibles en 2 s) */
+  --size-mega:     300px;   /* chiffre vedette */
+  --size-display:  140px;   /* titre plein écran */
+  --size-title:    84px;    /* titre de section */
+  --size-headline: 54px;    /* titre de carte */
+  --size-body:     32px;    /* texte d'appui */
+  --size-label:    24px;    /* surtitre / métadonnées */
+  --size-tiny:     19px;    /* crédits, petits caractères, horodatages */
+
+  --track-tight: -0.02em;   /* approche des titres */
+  --track-snug:  -0.01em;
+  --track-wide:  0.18em;    /* approche des libellés en capitales */
+
+  /* --- lueur — la signature. Douce, en couches, jamais un anneau dur. ------- */
+  --glow-accent-sm: 0 0 10px rgba(var(--accent-rgb), 0.55);
+  --glow-accent:    0 0 22px rgba(var(--accent-rgb), 0.55), 0 0 56px rgba(var(--accent-rgb), 0.30);
+  --glow-accent-lg: 0 0 40px rgba(var(--accent-rgb), 0.60), 0 0 120px rgba(var(--accent-rgb), 0.32);
+  --glow-white:     0 0 16px rgba(255, 255, 255, 0.50), 0 0 46px rgba(255, 255, 255, 0.26);
+  --glow-white-lg:  0 0 30px rgba(255, 255, 255, 0.55), 0 0 90px rgba(255, 255, 255, 0.30);
+  /* lueur du texte (en text-shadow) : cœur blanc qui se détache du fond sombre */
+  --textglow:       0 0 18px rgba(255, 255, 255, 0.45), 0 0 40px rgba(var(--accent-rgb), 0.30);
+  --textglow-accent:0 0 18px rgba(var(--accent-rgb), 0.65), 0 0 48px rgba(var(--accent-rgb), 0.35);
+
+  /* --- verre — surfaces dépolies. Deux teintes : claire (vive) + sombre (en retrait). */
+  --glass-bg:      rgba(255, 255, 255, 0.055);
+  --glass-bg-dark: rgba(16, 22, 34, 0.55);
+  --glass-border:  rgba(255, 255, 255, 0.14);
+  --glass-hi:      rgba(255, 255, 255, 0.22);  /* reflet intérieur du bord haut */
+  --glass-blur:    blur(22px) saturate(135%);
+  --glass-shadow:  0 24px 70px rgba(0, 0, 0, 0.50);
+
+  /* --- forme --------------------------------------------------------------- */
+  --radius:     28px;       /* cartes en verre, pastilles — généreusement arrondies */
+  --radius-sm:  16px;       /* pastilles, petites tuiles */
+  --radius-lg:  40px;       /* cadres de téléphone, grandes surfaces */
+  --pad:        80px;       /* marge de zone sûre du cadre */
+  --stroke:     1.5px;      /* épaisseur du fin liseré néon */
+
+  /* --- mouvement — doux, haut de gamme, qui respire. L'anti-Vox. ------------ */
+  /* Longues glisses expo/quint ; rebond avec dépassement pour les cartes ; entrée floue pour la mise au point.
+     JAMAIS de steps()/saccades — c'est la signature de Vox, pas la nôtre. */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);   /* expo-out — la glisse par défaut */
+  --ease-inout:  cubic-bezier(0.65, 0, 0.35, 1);   /* symétrique, pour les dérives */
+  --ease-soft:   cubic-bezier(0.33, 1, 0.68, 1);   /* stabilisation douce */
+  /* courbes GSAP en texte (utilisées dans les timelines des cartes) */
+  --gsap-glide:  power4.out;
+  --gsap-expo:   expo.out;
+  --gsap-spring: back.out(1.4);
+  --dur-in:   0.8s;    /* les entrées respirent */
+  --dur-out:  0.5s;
+
+  /* --- textures (déterministes) -------------------------------------------- */
+  /* Halo d'aurore — lumière bleue qui monte du bas, au centre. L'ambiance vedette.
+     À composer en couches de fond sous le contenu ; animer l'opacité/l'échelle. */
+  --bloom-bottom: radial-gradient(120% 85% at 50% 118%,
+                    rgba(var(--accent-rgb), 0.45) 0%,
+                    rgba(var(--accent-rgb), 0.16) 32%,
+                    transparent 62%);
+  --bloom-corner: radial-gradient(90% 90% at 88% 12%,
+                    rgba(var(--accent-rgb), 0.30) 0%,
+                    transparent 55%);
+
+  /* Vignette — attire l'œil au centre, assombrit les bords du cadre. */
+  --vignette: radial-gradient(125% 125% at 50% 45%, transparent 52%, rgba(0,0,0,0.55) 100%);
+
+  /* Grille de points discrète (la texture technique subtile des références). Faible contraste. */
+  --dot:      radial-gradient(circle at center, rgba(255,255,255,0.06) 1px, transparent 1.4px);
+  --dot-size: 46px 46px;
+
+  /* Grain de film fin sur tout — évite l'effet de bandes dans le noir. */
+  --tex-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

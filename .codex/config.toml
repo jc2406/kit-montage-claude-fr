@@ -1,0 +1,3 @@
+# Les skills sont découverts dans .agents/skills. Le modèle et les permissions restent au choix de l'utilisateur.
+project_doc_max_bytes = 65536
+project_doc_fallback_filenames = ["CLAUDE.md"]

@@ -1,0 +1,82 @@
+/* ============================================================================
+   VOX EXPLAINER — tokens du style
+   Source unique de la palette / typo / mouvement / texture de toutes les cartes de
+   ce style. Les cartes utilisent ces variables et ne codent jamais en dur couleurs, polices, courbes,
+   ni textures. Modifiez ici, toutes les cartes suivent.
+   Voir DESIGN.md pour le pourquoi. Inspiration : vidéo explicative animée façon Vox.
+   ============================================================================ */
+
+/* Typo. Le compilateur HyperFrames intègre les polices prises en charge par leur nom au rendu ;
+   cet @import permet à l'aperçu autonome / navigateur d'afficher les bonnes polices. */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Caveat:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,900;1,9..144,900&display=swap");
+
+:root {
+  /* --- palette (reflet de style.json + DESIGN.md). 5 couleurs symboliques. -- */
+  --paper:        #efe9dc;   /* fond papier journal chaud */
+  --paper-2:      #e6dcc4;   /* variante kraft / papier vieilli */
+  --ink:          #17130e;   /* encre d'imprimerie presque noire et chaude (texte + gravures) */
+  --yellow:       #37BDF8;   /* accent bleu signature — LE surlignage (cercles, encadrés marqueur). Le token garde le nom --yellow ; sa valeur est bleue. Changez-la pour votre marque. */
+  --red:          #e23b2e;   /* rouge éditorial — cercles, gribouillis, alerte */
+  --orange:       #f26a1b;   /* contour de découpe / accent secondaire */
+
+  /* alias sémantiques attendus par le contrat du blueprint */
+  --bg:     var(--paper);
+  --fg:     var(--ink);
+  --accent: var(--yellow);
+  --muted:  rgba(23, 19, 14, 0.55);
+
+  /* --- typographie ---------------------------------------------------------- */
+  /* Fraunces = la voix expressive (affirmations). Archivo = métadonnées, s'efface.
+     Caveat = notes manuscrites en marge uniquement. Contraste de graisse EXTRÊME. */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-label:   "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-hand:    "Caveat", "Bradley Hand", cursive;
+  /* alias du contrat */
+  --font-body:    var(--font-label);
+  --font-mono:    var(--font-label);
+
+  --wt-thin:  300;
+  --wt-reg:   400;
+  --wt-bold:  700;
+  --wt-black: 900;
+
+  /* tailles vidéo pour 1920x1080 (grandes — lisibles en 2 s) */
+  --size-mega:     320px;   /* chiffre vedette */
+  --size-display:  150px;   /* titre plein écran */
+  --size-title:    92px;    /* titre de section */
+  --size-headline: 56px;    /* titre de carte */
+  --size-body:     32px;    /* texte d'appui */
+  --size-label:    24px;    /* surtitre / métadonnées */
+  --size-tiny:     18px;    /* crédits, petits caractères */
+
+  --track-tight: -0.03em;   /* approche des titres, plus serrée que sur le web */
+  --track-wide:  0.16em;    /* approche des libellés en capitales */
+
+  /* --- mouvement — la signature Vox, saccadée, à faible obturation ---------- */
+  /* Entrée sèche, stabilisation avec un léger dépassement. Les courbes par paliers donnent
+     l'effet stop-motion / faible obturation. Les courbes GSAP en texte vivent dans les cartes. */
+  --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:   cubic-bezier(0.5, 0, 0.75, 0);
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --gsap-pop:   back.out(2.2);     /* éléments en papier découpé qui surgissent */
+  --gsap-step:  steps(6);          /* mouvement saccadé / obturateur */
+  --dur-in:  0.42s;
+  --dur-out: 0.3s;
+
+  /* --- forme --------------------------------------------------------------- */
+  --radius: 2px;            /* les découpes sont presque carrées, à peine arrondies */
+  --pad: 56px;
+  --marker-skew: -1.4deg;   /* les encadrés de surlignage sont légèrement de travers */
+
+  /* --- textures (data-URI SVG déterministes + dégradés) -------------------- */
+  /* Grain de fibre de papier — fractalNoise, graine fixe (rendu déterministe). */
+  --tex-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* Points de trame — pour remplir les emplacements découpés / les ombres à la façon Vox. */
+  --tex-halftone: radial-gradient(circle at center, var(--ink) 1.1px, transparent 1.6px);
+  --tex-halftone-size: 7px 7px;
+
+  /* Grille de construction discrète (repères de plan). */
+  --grid-line: rgba(23, 19, 14, 0.07);
+  --grid-size: 64px;
+}

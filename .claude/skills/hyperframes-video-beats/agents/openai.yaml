@@ -1,0 +1,4 @@
+interface:
+  display_name: "Temps forts vidéo HyperFrames"
+  short_description: "Planifier et construire les motion graphics d'une vidéo face caméra"
+  default_prompt: "Utilise $hyperframes-video-beats pour planifier et construire des motion graphics HyperFrames rythmés pour cette vidéo face caméra."
