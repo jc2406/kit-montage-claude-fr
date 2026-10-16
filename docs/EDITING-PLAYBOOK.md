@@ -1,8 +1,8 @@
-# Méthode de montage : comment les vidéos de Nate sont montées avec l'IA
+# Méthode de montage : monter ses vidéos avec l'IA
 
-Les reels, Shorts et vidéos explicatives de Nate sont désormais montés par un agent IA (Claude Code ou Codex) qui utilise des skills comme ceux de ce kit. Nate se filme en train de parler, transmet le fichier, et l'agent le coupe, le sous-titre, trouve le B-roll, construit les motion graphics, mixe la musique et les bruitages, et vérifie son propre travail.
+Avec ce kit, les reels, Shorts et vidéos explicatives sont montés par un agent IA (Claude Code ou Codex) qui utilise ses skills. Vous vous filmez en train de parler, vous transmettez le fichier, et l'agent le coupe, le sous-titre, trouve le B-roll, construit les motion graphics, mixe la musique et les bruitages, et vérifie son propre travail.
 
-Cette page explique comment ça marche et ce que nous avons appris en le construisant. Les chiffres viennent de l'étude image par image des meilleurs reels de Nate et de dizaines de passes de montage où il a donné ses remarques.
+Cette page explique comment ça marche et ce que nous avons appris en le construisant. Les chiffres viennent de l'étude image par image de reels performants et de dizaines de passes de montage commentées.
 
 > Note de traduction : les exemples de phrases citées viennent d'enregistrements en anglais. Ils sont traduits ici ; le principe s'applique de la même façon en français.
 
@@ -18,7 +18,7 @@ Cette page explique comment ça marche et ce que nous avons appris en le constru
 
 ## La boucle qui fait marcher le tout
 
-Les montages sont devenus bons parce que chaque remarque de Nate est devenue une règle permanente dans un skill. Il n'a jamais eu à donner deux fois la même remarque.
+Les montages deviennent bons parce que chaque remarque devient une règle permanente dans un skill. On ne donne jamais deux fois la même remarque.
 
 1. **Enregistrer et transmettre le fichier.** Aucune application de montage.
 2. **L'agent monte et rend un brouillon.**
@@ -28,7 +28,7 @@ Les montages sont devenus bons parce que chaque remarque de Nate est devenue une
 
 Des exemples réels de remarques devenues des règles :
 
-| Remarque de Nate | Ce que fait le skill maintenant |
+| Remarque | Ce que fait le skill maintenant |
 |---|---|
 | « Des sous-titres blancs sur un site clair, c'est illisible. » | Chaque sous-titre est dans la même boîte sombre, et une vérification de contraste mesure les pixels derrière chacun. |
 | « Une vidéo générée par IA bat toujours une image générée par IA. » | Une image fixe générée utilisée comme B-roll est une erreur de construction. Les images fixes ne servent que de première image pour une vidéo IA. |
@@ -45,7 +45,7 @@ Le savoir-faire du montage vit dans les fichiers des skills : vous pouvez le lir
 
 C'est l'ordre que suivent les skills `short-form-edit` et `edit-video`.
 
-1. **Transcrire** avec des horodatages par mot (ElevenLabs Scribe est le choix par défaut de Nate ; Whisper fonctionne).
+1. **Transcrire** avec des horodatages par mot (ElevenLabs Scribe est le choix par défaut ; Whisper fonctionne).
 2. **Couper les reprises.** Garder la dernière prise propre de chaque phrase. Joindre deux prises seulement là où les deux côtés sont silencieux ; si les prises s'enchaînent, jouer une prise en entier.
 3. **Couper entre les phrases, jamais au milieu.** Une phrase, c'est ce que vous dites d'un seul souffle. Supprimer les blancs entre les phrases et garder vos respirations naturelles (après une virgule, après « D'abord, »). Ne supprimer un mot de remplissage que s'il y a du silence des deux côtés : « D'abord, ce qu'il fait, c'est qu'il transcrit » est une seule phrase, et couper « ce qu'il fait, c'est qu' » abîme le mot « D'abord ». Ne jamais accélérer la voix.
 4. **Planifier l'histoire avant tout visuel :** accroche, preuve, les éléments, la chute, l'appel à l'action. L'écrire.
@@ -56,7 +56,7 @@ C'est l'ordre que suivent les skills `short-form-edit` et `edit-video`.
 
 ## Le style maison des reels (les chiffres)
 
-Mesuré sur les 27 meilleurs Reels Instagram de Nate (mars à septembre 2026). Servez-vous-en comme point de départ pour votre propre style, pas comme d'une loi.
+Mesuré sur 27 Reels Instagram performants (mars à septembre 2026). Servez-vous-en comme point de départ pour votre propre style, pas comme d'une loi.
 
 **Rythme**
 - La parole commence dans les 0,1 premières secondes. Le fichier se termine juste après le dernier mot. Pas de carte d'intro ni d'outro.
@@ -142,7 +142,7 @@ L'agent vérifie son propre travail avant que vous le voyiez :
 - **La première seconde :** lire les 2,5 premières secondes image par image, et la première image de chaque plan sur le visage. Rien ne couvre la bouche.
 - **Volume et crête vraie** sur le fichier livré.
 - **Tests de visionnage par IA** (un modèle vidéo qui regarde le rendu) : utiles pour repérer des problèmes possibles, mais bruités, et ils inventent des effets. Vérifier chaque reproche sur de vraies images avant d'agir. Un panel de profils (« ce spectateur irait-il au bout ? où s'est-il arrêté ? ») est plus utile qu'une note de 1 à 10.
-- **Votre revue est le dernier filtre.** Nate a repéré un décalage de synchro des lèvres qu'aucune vérification automatique n'avait vu.
+- **Votre revue est le dernier filtre.** Une relecture humaine a repéré un décalage de synchro des lèvres qu'aucune vérification automatique n'avait vu.
 
 ## Les leçons qui nous ont coûté du temps
 

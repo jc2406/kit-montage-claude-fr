@@ -8,7 +8,7 @@ chemins vers les fichiers retirés. Les résultats ci-dessous sont ceux du dép�
 vérifications de la traduction sont listées dans le message du commit et peuvent être relancées
 avec les commandes en bas de page.
 
-## Herk Edit Kit consolidé, version 2
+## Kit consolidé, version 2
 
 - Les 14 skills de référence ont passé la validation de leur en-tête, et les 94 ressources des
   skills correspondent aux copies pour Codex. La vérification de la distribution ne signale aucune

@@ -5,7 +5,7 @@ HyperFrames, des coupes pilotées par la transcription et des motion graphics r�
 
 ## Langue
 
-Ce kit est la traduction française du Herk Edit Kit de Nate Herk. Réponds à l'utilisateur
+Ce kit est entièrement en français. Réponds à l'utilisateur
 en français. Écris les plans, les storyboards, les sous-titres et les textes à l'écran en
 français, sauf si l'utilisateur demande une autre langue ou si la vidéo est dans une autre
 langue. Les noms de fichiers, de skills, de commandes et le code restent en anglais.
@@ -67,7 +67,7 @@ N'affiche jamais de secrets et ne copie jamais de médias privés dans les exemp
 
 Avant de choisir un service de transcription, de génération de médias ou de voix off, lis
 `docs/TOOLS-AND-API-KEYS.md` et vérifie le fournisseur choisi par l'utilisateur et sa configuration
-locale. ElevenLabs Scribe est le choix par défaut de Nate ; respecte une demande pour OpenAI Whisper,
+locale. ElevenLabs Scribe est le choix par défaut ; respecte une demande pour OpenAI Whisper,
 Whisper en local ou un autre fournisseur. Normalise les horodatages des mots vérifiés pour les outils
 de coupe. Le script de transcription inclus ne gère qu'ElevenLabs. Kie.ai est optionnel et demande
 une intégration configurée et des crédits. Réutilise les transcriptions et les médias existants ;
@@ -110,5 +110,5 @@ Les vérifications automatiques dans le navigateur doivent tourner sans interfac
 et capture du curseur désactivés ; les saisies simulées doivent rester dans le navigateur virtuel.
 
 Pour les formats courts, lis `docs/SHORT-FORM.md` et `docs/EDITING-PLAYBOOK.md` (le style maison
-mesuré de Nate et ses leçons), et utilise les validateurs du plan et des plans de coupe. Les
+mesuré et ses leçons), et utilise les validateurs du plan et des plans de coupe. Les
 vérifications structurelles complètent la revue de la vidéo et du son rendus, elles ne la remplacent pas.

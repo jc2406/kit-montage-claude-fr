@@ -1,24 +1,18 @@
 # Kit Montage Claude (FR)
 
-**Traduction française du [Herk Edit Kit](https://github.com/nateherkai/herk-edit-kit) de Nate Herk**, adaptée par Jean-Charles Salvin ([JCBuildsAI](https://github.com/jc2406)).
+Version française par Jean-Charles Salvin ([JCBuildsAI](https://github.com/jc2406)).
 
-Le kit de montage vidéo de Nate Herk pour **Codex et Claude Code**, construit sur HyperFrames.
+Un kit de montage vidéo en français pour **Claude Code et Codex**, construit sur HyperFrames.
 Apportez vos propres rushs. Coupez les blancs, repérez les erreurs, construisez l'histoire
 et créez des motion graphics avec HyperFrames et GSAP.
 
-> **Ce qui change par rapport à l'original**
 > - Tout le texte est en français : skills, documentation, instructions de l'agent, textes des cartes, commentaires et messages des scripts. Le code (noms de variables, de fonctions, de fichiers) reste en anglais pour ne rien casser.
-> - Les éléments de marque **AI Automation Society** (logo, charte, tokens, projets d'exemple) ont été retirés : ils ne sont pas couverts par la licence.
-> - Les vidéos d'exemple où apparaît Nate Herk et les 12 projets pédagogiques d'origine (`video-projects/`) ont été retirés : la licence ne donne aucun droit sur son image ni sur ces médias. Vous les trouverez dans le [dépôt d'origine](https://github.com/nateherkai/herk-edit-kit).
-> - Licences d'origine conservées : [LICENSE](LICENSE) (MIT), [licenses/](licenses/) et [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-## Exemples
-
-Les vidéos de démonstration du kit se trouvent dans le README du [dépôt d'origine](https://github.com/nateherkai/herk-edit-kit#examples) : un showreel motion design de 15 secondes et trois reels montés de bout en bout par un agent IA à partir d'un enregistrement brut (coupes, sous-titres, B-roll, motion graphics, musique et bruitages).
+> - Aucun projet vidéo d'exemple ni média n'est inclus : créez un projet avec vos propres rushs (`npm run new-video -- <nom>`).
+> - Licences conservées : [LICENSE](LICENSE) (MIT), [licenses/](licenses/) et [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Ce qu'il contient
 
-- **[Méthode de montage](docs/EDITING-PLAYBOOK.md)** : comment les vidéos de Nate sont montées avec l'IA, le style maison mesuré pour les reels, les règles de B-roll, de sous-titres et de son, et comment chaque remarque devient une règle dans un skill.
+- **[Méthode de montage](docs/EDITING-PLAYBOOK.md)** : comment monter des vidéos avec l'IA, le style maison mesuré pour les reels, les règles de B-roll, de sous-titres et de son, et comment chaque remarque devient une règle dans un skill.
 - **15 skills**, dupliqués pour les deux assistants, avec leurs scripts et leurs références.
 - **406 cartes de motion graphics** (brouillons) réparties en deux styles, avec manifestes, tokens CSS et emplacements modifiables.
 - **Deux modèles de scène** : papier millimétré sombre et encart vitré à gauche.
@@ -28,7 +22,7 @@ Les vidéos de démonstration du kit se trouvent dans le README du [dépôt d'or
 
 ## Outils et services optionnels
 
-**Nate utilise ElevenLabs Scribe pour transcrire et Kie.ai pour générer des vidéos et
+**Le kit utilise par défaut ElevenLabs Scribe pour transcrire et, en option, Kie.ai pour générer des vidéos et
 des images.** Utilisez vos propres clés API et crédits pour ces services.
 Vous pouvez demander à l'assistant d'utiliser OpenAI Whisper ou Whisper en local à la place,
 ou fournir une transcription mot à mot existante. Les médias générés sont optionnels.
@@ -126,7 +120,7 @@ compositions « May Shorts ». [Notes de migration et de compatibilité](docs/MI
 
 | Ressource | Par où commencer |
 | --- | --- |
-| Comment Nate monte (style, règles, leçons) | [Méthode de montage](docs/EDITING-PLAYBOOK.md) |
+| Comment monter (style, règles, leçons) | [Méthode de montage](docs/EDITING-PLAYBOOK.md) |
 | Instructions partagées pour l'agent | [AGENTS.md](AGENTS.md) |
 | Vocabulaire du mouvement et des transitions | [MOTION_PHILOSOPHY.md](MOTION_PHILOSOPHY.md) |
 | Bibliothèque de cartes et tokens de design | [Guide de la bibliothèque](style-library/GUIDE.md) |
@@ -146,7 +140,7 @@ automatiquement par Git. Créez un nouveau projet pour vos propres rushs.
 
 ## Crédits et licence
 
-- Kit d'origine : **Herk Edit Kit** © 2026 Nate Herk, sous licence MIT ([LICENSE](LICENSE)) et permission d'usage du kit ([licenses/PIPELINE-USE-PERMISSION.txt](licenses/PIPELINE-USE-PERMISSION.txt)).
-- Traduction et adaptation françaises : Jean-Charles Salvin, 2026. Mêmes conditions.
+- Code sous licence MIT ([LICENSE](LICENSE)) et permission d'usage du kit ([licenses/PIPELINE-USE-PERMISSION.txt](licenses/PIPELINE-USE-PERMISSION.txt)).
+- Version française : Jean-Charles Salvin, 2026. Mêmes conditions.
 - Les skills `hyperframes`, `hyperframes-cli`, `hyperframes-registry` et `gsap` viennent de l'écosystème [HyperFrames](https://github.com/heygen-com/hyperframes) (Apache-2.0, [licenses/HYPERFRAMES-LICENSE](licenses/HYPERFRAMES-LICENSE)). Leurs fichiers ont été traduits en français : voir la mention dans chaque `NOTICE.txt`.
-- Cette traduction n'est ni affiliée ni approuvée par Nate Herk, AI Automation Society ou HeyGen.
+- Ce kit n'est ni affilié ni approuvé par HeyGen.

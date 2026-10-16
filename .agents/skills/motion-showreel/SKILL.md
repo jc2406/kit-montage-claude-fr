@@ -1,6 +1,6 @@
 ---
 name: motion-showreel
-description: Concevoir et construire un showreel motion design ou un reel de marque de 10 à 30 secondes dans le style du « CLAUDE / MOTION REEL » Opus 5.5 de Nate : un motif de marque transformé à travers des chapitres de savoir-faire étiquetés, un HUD persistant, des coupes calées sur une grille de 120 à 130 BPM, une rafale de moins d'une seconde et un logo final tenu qui répond à l'ouverture. À utiliser quand on demande un showreel, un sizzle reel, un reel de marque, un motion reel, « un reel comme celui d'Opus », « montrer du motion design pour <marque> », un film de marque de 15 secondes monté sur la musique, ou pour étudier pourquoi un reel de référence fonctionne et reconstruire cette énergie pour une autre marque.
+description: Concevoir et construire un showreel motion design ou un reel de marque de 10 à 30 secondes dans le style du « CLAUDE / MOTION REEL » d'Opus 5.5 : un motif de marque transformé à travers des chapitres de savoir-faire étiquetés, un HUD persistant, des coupes calées sur une grille de 120 à 130 BPM, une rafale de moins d'une seconde et un logo final tenu qui répond à l'ouverture. À utiliser quand on demande un showreel, un sizzle reel, un reel de marque, un motion reel, « un reel comme celui d'Opus », « montrer du motion design pour <marque> », un film de marque de 15 secondes monté sur la musique, ou pour étudier pourquoi un reel de référence fonctionne et reconstruire cette énergie pour une autre marque.
 ---
 
 # Showreel motion design

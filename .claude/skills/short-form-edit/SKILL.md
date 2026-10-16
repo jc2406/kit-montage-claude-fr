@@ -22,7 +22,7 @@ réponse comme un jugement éditorial tant qu'il n'existe pas de données d'audi
 
 ## Style maison et remarques
 
-Lis `docs/EDITING-PLAYBOOK.md` avant de planifier. Il contient le style de reel mesuré de Nate
+Lis `docs/EDITING-PLAYBOOK.md` avant de planifier. Il contient le style de reel mesuré
 (rythme, mises en page, sous-titres, ordre de préférence du B-roll, palette sonore), les variantes
 reel brut, vidéo longue vers Short et vidéo explicative narrée, et les leçons qui ont coûté du
 temps. Utilise-le par défaut quand l'utilisateur ne donne pas de style ; le brief de
@@ -40,7 +40,7 @@ résulte ensemble.
    par défaut. Garde tous les fichiers dans `video-projects/<slug>/`.
 2. Sonde la source et la référence fournies : durée, dimensions, cadence d'images, audio et
    identité d'une éventuelle transcription existante. Préserve les originaux. Transcris avec le
-   fournisseur choisi par l'utilisateur ; ElevenLabs Scribe est le choix par défaut de Nate. Lis
+   fournisseur choisi par l'utilisateur ; ElevenLabs Scribe est le choix par défaut. Lis
    `docs/TOOLS-AND-API-KEYS.md` pour les alternatives Whisper, la normalisation des horodatages
    par mot, les identifiants et les coûts. Ne remplace jamais par une prise plus ancienne.
 3. Quand une référence est fournie, inspecte tout le reel avec des planches contact, des images
@@ -255,7 +255,7 @@ pas une preuve filmée. Privilégie de vraies réactions humaines quand elles se
 
 ## Générer et assembler
 
-1. Kie.ai est le fournisseur optionnel de Nate pour les inserts en mouvement et les images générés.
+1. Kie.ai est le fournisseur optionnel pour les inserts en mouvement et les images générés.
    Utilise le fournisseur choisi par l'utilisateur ou les médias fournis ; vérifie son compte, ses
    crédits et l'intégration avant de générer. Voir `docs/TOOLS-AND-API-KEYS.md`. Vérifie le schéma
    actuel de l'API officielle. Enregistre le modèle, le prompt, l'ID de tâche, la sortie retenue et

@@ -1,9 +1,7 @@
-# Le Herk Edit Kit consolidé
+# Le kit consolidé
 
-`nateherkai/herk-edit-kit` (anciennement `nateherkai/hyperframes-student-kit`) est le dépôt de référence.
-Le kit réutilisable de `nateherkai/hyperframes-video-pipeline` y a été fusionné, en conservant
-les deux historiques publiés ainsi que les étoiles et l'URL du dépôt d'origine.
-Ce dépôt (`kit-montage-claude-fr`) en est la traduction française.
+Ce dépôt (`kit-montage-claude-fr`) réunit en un seul kit, en français, les outils de montage
+et le pipeline vidéo réutilisable.
 
 ## Ce qui a été ajouté
 
@@ -15,10 +13,8 @@ Ce dépôt (`kit-montage-claude-fr`) en est la traduction française.
 
 ## Ce qui reste
 
-Dans le dépôt d'origine, les 12 exemples de `video-projects/` et le dossier `assets/` à la racine
-sont conservés sans modification ; ils ne sont pas repris dans cette traduction (voir
-[le périmètre de l'export](EXPORT-SCOPE.md)). Les trois skills supplémentaires d'origine restent
-disponibles. Les nouveaux reels passent par `short-form-edit` ; `short-form-video` est la
+Les exemples de `video-projects/` et le dossier `assets/` ne sont pas inclus (voir
+[le périmètre de l'export](EXPORT-SCOPE.md)). Les nouveaux reels passent par `short-form-edit` ; `short-form-video` est la
 référence historique des May Shorts.
 
 Le paquet garde le comportement CommonJS pour les anciens scripts `.js` ; les nouveaux outils
@@ -32,6 +28,6 @@ Les nouveaux projets privés sont ignorés par Git. Les fichiers déjà suivis p
 malgré les règles d'exclusion : ne mettez donc pas de rushs privés dans ces dossiers.
 Aucun historique d'espace de travail privé, aucun enregistrement brut ni aucun identifiant n'a été importé.
 
-La licence MIT d'origine s'applique toujours. Le matériel importé du pipeline garde sa permission
+La licence MIT s'applique. Le matériel importé du pipeline garde sa permission
 d'usage, et les licences tierces restent applicables. Voir les
 [mentions des ressources](../THIRD_PARTY_NOTICES.md).

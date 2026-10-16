@@ -1,6 +1,6 @@
 # Analyse de référence : le « CLAUDE / MOTION REEL » d'Opus 5.5
 
-Source : un motion reel de 15 secondes réalisé par Opus 5.5 pour Nate Herk (septembre 2026).
+Source : un motion reel de 15 secondes réalisé par Opus 5.5 (septembre 2026).
 1920x1080, 60 images/s, 15,06 s, 900 images. Analysé avec `scripts/analyze-reference.mjs` (planches
 contact à 6 images/s, différence de luminance image par image, RMS audio et attaques).
 

@@ -16,12 +16,11 @@ décision de montage, aucun identifiant ni réglage propre à une machine n'a é
 Cette traduction ne reprend pas les médias du dépôt d'origine :
 
 - les 12 projets pédagogiques de `video-projects/` ;
-- les éléments de marque AI Automation Society (`assets/`, `DESIGN.ais-example.md`) ;
+- les éléments de marque tiers (`assets/`, `DESIGN.ais-example.md`) ;
 - les vidéos de démonstration de `examples/showcase/` et leurs images d'aperçu.
 
-Ces médias montrent Nate Herk ou la marque AI Automation Society, et la licence ne donne aucun
-droit sur une image, une marque ou un média exclu. Ils restent disponibles dans le
-[dépôt d'origine](https://github.com/nateherkai/herk-edit-kit). Le vérificateur `npm run check`
+Ces médias montrent des personnes ou des marques tierces, et la licence ne donne aucun
+droit sur une image, une marque ou un média exclu. Le vérificateur `npm run check`
 refuse tout fichier vidéo ou audio dans la distribution.
 
 Les nouveaux médias et projets des utilisateurs sont ignorés par Git.

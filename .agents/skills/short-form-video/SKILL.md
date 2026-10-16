@@ -10,9 +10,7 @@ motion graphics + sous-titres karaoké. Tout ce skill est tiré de l'autopsie de
 May Shorts 19 (v1 → v4) et sert à maintenir ces exemples. Utilise `short-form-edit` pour les
 nouveaux enregistrements.
 
-> Note de la version française : les projets `may-shorts-18` et `may-shorts-19` cités ici ne sont
-> pas inclus dans cette traduction (ils montrent Nate Herk et la marque AI Automation Society).
-> Ils se trouvent dans le [dépôt d'origine](https://github.com/nateherkai/herk-edit-kit).
+> Note : les projets `may-shorts-18` et `may-shorts-19` cités ici ne sont pas inclus dans ce kit.
 
 **Lance toujours `/hyperframes` d'abord.** Ce skill vient par-dessus — il ne remplace pas les règles
 du framework (attributs `data-*`, `window.__timelines`, structure de composition). Elles ne se
@@ -370,7 +368,7 @@ appuie-toi sur des visuels qui se lisent comme de l'information — courses de b
 chiffres qui défilent, cartes de chaleur, mini-courbes, organigrammes, habillage de tableau de bord
 avec télémétrie qui défile, grilles de points de douleur qui s'allument en rouge à la suite. La
 scène 4 de may-shorts-18 v1 combinait anneaux radar + puce de terminal + étincelles — fonctionnel
-mais décoratif, et Nate l'a trouvée « fade ». La v2 l'a remplacée par une grille 3×3 de points de
+mais décoratif, et la relecture l'a trouvée « fade ». La v2 l'a remplacée par une grille 3×3 de points de
 douleur qui s'allument en rouge-orangé à la suite + une mini-courbe qui se trace avec un repère
 VOUS-ÊTES-ICI + la claque de résolution — même budget de temps, engagement bien plus fort.
 

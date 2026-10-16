@@ -9,7 +9,7 @@
 node scripts/transcribe-elevenlabs.mjs video-projects/ma-video/assets/raw.mp4
 ```
 
-C'est le choix par défaut de Nate : l'audio est envoyé à ElevenLabs avec votre clé et vos crédits.
+C'est le choix par défaut : l'audio est envoyé à ElevenLabs avec votre clé et vos crédits.
 Vous pouvez choisir à la place OpenAI Whisper, Whisper en local ou un autre fournisseur ; voir
 [la configuration des fournisseurs et la normalisation des transcriptions](TOOLS-AND-API-KEYS.md).
 Vous pouvez aussi fournir une transcription JSON mot à mot existante avec

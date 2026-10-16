@@ -1,6 +1,6 @@
 # Outils, comptes et clés API
 
-Nate utilise **ElevenLabs Scribe pour la transcription** et **Kie.ai pour générer vidéos et
+Par défaut, le kit utilise **ElevenLabs Scribe pour la transcription** et **Kie.ai pour générer vidéos et
 images**. Ce sont ses services préférés, pas des obligations pour chaque montage. Utilisez vos
 propres comptes et crédits, et ne configurez que ce dont vous vous servez.
 
@@ -11,7 +11,7 @@ propres comptes et crédits, et ne configurez que ce dont vous vous servez.
 | Codex ou Claude Code | Suivre les skills de montage guidés par l'agent | Votre propre accès à l'assistant. Les crédits des API externes sont à part. |
 | Node.js 22+, npm, Git, FFmpeg avec ffprobe, et Chrome ou Chromium | Montage, aperçu et rendu en local | À installer sur votre ordinateur. Voir [l'installation](SETUP.md). |
 | HyperFrames et GSAP | Compositions vidéo et animation | Installés par `npm ci`. Le rendu tourne en local. Certains modèles utilisent des polices ou des CDN en ligne ; rapatriez en local les fichiers retenus pour le rendu final. |
-| ElevenLabs Scribe | Choix par défaut de Nate pour la transcription | Votre propre clé avec l'accès `speech_to_text` et du crédit disponible. L'outil inclus envoie l'audio à ElevenLabs. |
+| ElevenLabs Scribe | Choix par défaut pour la transcription | Votre propre clé avec l'accès `speech_to_text` et du crédit disponible. L'outil inclus envoie l'audio à ElevenLabs. |
 | API OpenAI Whisper | Transcription dans le cloud, en alternative | Votre propre clé API OpenAI et sa facturation. Demandez à l'assistant de configurer l'appel et de normaliser les horodatages des mots. |
 | Whisper ou whisper.cpp en local | Transcription sur votre ordinateur, en alternative | Installation séparée du moteur et du modèle. Pas de clé cloud ; demande le téléchargement des modèles, de l'espace disque et de la puissance de calcul locale. |
 | Kie.ai | B-roll en mouvement, images et autres médias générés, en option | Votre propre compte, clé et crédits. Vos rushs et vos fichiers peuvent les remplacer. |
@@ -83,7 +83,7 @@ Copiez l'un de ces prompts :
 
 ## Kie.ai : vidéos et médias générés
 
-Nate utilise [Kie.ai](https://kie.ai/) pour générer des vidéos et des images. Ajoutez
+Le kit peut utiliser [Kie.ai](https://kie.ai/) pour générer des vidéos et des images. Ajoutez
 `KIE_API_KEY` dans `.env` si vous le choisissez. Suivez le
 [guide officiel de l'API](https://docs.kie.ai/) pour les clés, les requêtes propres à chaque
 modèle, le suivi des tâches et les crédits.

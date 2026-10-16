@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "type": "commonjs",
-  "description": "Kit Montage Claude (FR) — traduction française du Herk Edit Kit de Nate Herk, pour Claude Code et Codex : montage long, reels, storytelling et motion design.",
+  "description": "Kit Montage Claude (FR) — kit de montage vidéo en français pour Claude Code et Codex : montage long, reels, storytelling et motion design.",
   "scripts": {
     "transcribe": "node scripts/transcribe-elevenlabs.mjs",
     "validate-beats": "node scripts/validate-beat-sync.mjs",

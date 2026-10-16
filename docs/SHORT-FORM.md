@@ -22,7 +22,7 @@ toutes les sorties dans le nouveau projet.
 6. Validez, prévisualisez, rendez un brouillon, inspectez les images et écoutez le montage en entier.
 7. Réglez les problèmes de timing, de son et de composition avant d'exporter la vidéo finale.
 
-Nate utilise ElevenLabs Scribe pour la transcription et Kie.ai pour générer vidéos et images.
+Le kit utilise par défaut ElevenLabs Scribe pour la transcription et, en option, Kie.ai pour générer vidéos et images.
 Il vous faut vos propres clés et crédits pour ces services. Whisper est une alternative pour la
 transcription, et vos rushs existants peuvent remplacer les médias générés.
 Voir [les outils, comptes et clés API](TOOLS-AND-API-KEYS.md) pour l'installation et des prompts

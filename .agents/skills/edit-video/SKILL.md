@@ -13,7 +13,7 @@ manque, propose un style de `style-library/registry.json` en fonction des images
    dans les médias du projet ou utilise un chemin local fourni explicitement.
 2. Lis `docs/TOOLS-AND-API-KEYS.md` avant de configurer un service. Réutilise une transcription
    mot à mot qui correspond. Sinon, utilise le fournisseur choisi par l'utilisateur ; par défaut
-   chez Nate : `node scripts/transcribe-elevenlabs.mjs <source>`. OpenAI Whisper et Whisper en
+   : `node scripts/transcribe-elevenlabs.mjs <source>`. OpenAI Whisper et Whisper en
    local sont des alternatives prises en charge, après normalisation de la transcription.
    Vérifie les identifiants disponibles ou les dépendances locales. Explique les envois et les
    coûts avant tout appel à un service dont l'autorisation manque encore.

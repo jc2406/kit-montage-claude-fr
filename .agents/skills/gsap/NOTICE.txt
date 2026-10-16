@@ -1,7 +1,7 @@
 HyperFrames skill ecosystem, HeyGen, Inc.
 Source: https://github.com/heygen-com/hyperframes
 Apache-2.0; see licenses/HYPERFRAMES-LICENSE at kit root.
-Herk Edit Kit adaptations: runtime-relative skill paths and portable packaging.
+Kit adaptations: runtime-relative skill paths and portable packaging.
 
 Traduction française (kit-montage-claude-fr, Jean-Charles Salvin, 2026) : les fichiers de ce skill
 ont été modifiés — textes traduits de l'anglais vers le français, code et noms de fichiers inchangés.

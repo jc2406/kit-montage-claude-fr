@@ -1,6 +1,6 @@
 # Installation et dépannage
 
-Commencez par [les outils, comptes et clés API](TOOLS-AND-API-KEYS.md) pour les choix de Nate
+Commencez par [les outils, comptes et clés API](TOOLS-AND-API-KEYS.md) pour les choix par défaut
 (ElevenLabs et Kie.ai), les alternatives Whisper et les services optionnels.
 
 Utilisez Node 22+ (exigé par la version figée de la CLI HyperFrames), FFmpeg avec ffprobe et

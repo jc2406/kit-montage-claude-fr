@@ -84,5 +84,5 @@ Le mouvement fait la moitié de l'identité, donc les aperçus sont de courtes b
 
 ## Notes
 
-- Les `style-templates/` de Nate (dark-graph-paper, left-glass-popout) sont **une référence seulement** — ils ne font pas partie de cette bibliothèque. Reprends des idées, ne les porte pas tels quels.
+- Les `style-templates/` (dark-graph-paper, left-glass-popout) sont **une référence seulement** — ils ne font pas partie de cette bibliothèque. Reprends des idées, ne les porte pas tels quels.
 - `MOTION_PHILOSOPHY.md` et `.claude/skills/hyperframes/` (palettes, transitions, typographie, styles visuels) sont des ressources de métier partagées dans lesquelles chaque style peut puiser.
